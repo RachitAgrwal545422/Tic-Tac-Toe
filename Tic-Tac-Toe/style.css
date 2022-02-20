@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Festive&family=Supermercado+One&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+nav {
+  font-family: "Roboto", sans-serif;
+}
+.game {
+  display: flex;
+}
+.container {
+  padding-top: 10vh;
+  padding-left: 10vw;
+  display: grid;
+  grid-template-columns: repeat(3, 10vw);
+  grid-template-rows: repeat(3, 10vh);
+}
+.box:nth-child(1),
+.box:nth-child(2),
+.box:nth-child(3) {
+  border-top: none;
+}
+.box:nth-child(1),
+.box:nth-child(4),
+.box:nth-child(7) {
+  border-left: none;
+}
+.box:nth-child(3),
+.box:nth-child(6),
+.box:nth-child(9) {
+  border-right: none;
+}
+.box:nth-child(7),
+.box:nth-child(8),
+.box:nth-child(9) {
+  border-bottom: none;
+}
+.box {
+  border: 2px solid black;
+  font-size: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box:hover {
+  background-color: #60c7db;
+  cursor: pointer;
+}
+
+.game-info {
+  padding-right: 20vw;
+  padding-top: 10pw;
+  font-family: "Supermercado One", cursive;
+}
+.img-box img {
+  display: none;
+}
